@@ -63,6 +63,17 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   ]
 
+
+  //Create Board
+  function createBoard(grid, squares) {
+    for (let i = 0; i < width*width; i++) {
+      const square = document.createElement('div')
+      square.dataset.id = i
+      grid.appendChild(square)
+      squares.push(square)
+    }
+  }
+
   createBoard(userGrid, userSquares)
   createBoard(computerGrid, computerSquares)
 
@@ -173,16 +184,6 @@ document.addEventListener('DOMContentLoaded', () => {
       setupButtons.style.display = 'none'
       playGameSingle()
     })
-  }
-
-  //Create Board
-  function createBoard(grid, squares) {
-    for (let i = 0; i < width*width; i++) {
-      const square = document.createElement('div')
-      square.dataset.id = i
-      grid.appendChild(square)
-      squares.push(square)
-    }
   }
 
   //Draw the computers ships in random locations
