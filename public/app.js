@@ -237,7 +237,7 @@ document.addEventListener('DOMContentLoaded', () => {
   userSquares.forEach(square => square.addEventListener('dragleave', dragLeave))
   userSquares.forEach(square => square.addEventListener('drop', dragDrop))
   userSquares.forEach(square => square.addEventListener('dragend', dragEnd))
-
+ 
   let selectedShipNameWithIndex
   let draggedShip
   let draggedShipLength
