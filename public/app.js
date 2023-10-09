@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //Draw the computers ships in random locations
   function generate(ship) {
-    let randomDirection = Math.floor(Math.random() * ship.directions.length)
+    let randomDirection = Math.floor(Math.random() * ship.directions.length) 
     let current = ship.directions[randomDirection]
     if (randomDirection === 0) direction = 1
     if (randomDirection === 1) direction = 10
